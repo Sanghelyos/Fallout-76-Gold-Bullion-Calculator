@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculateur de Grind d'or</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<nav>
+			<select name="lang_input" id="langselect">
+				<option value="en-US">English</option>
+				<option value="fr-FR">Français</option>
+			</select>
+			<button id="langchange">Changer</button>
+		</nav>
+		<div id="title">
+			<h1>Calculateur de grind d'Or</h1>
+			<h2>Pour FALLOUT 76</h2>
+		</div>
+		<form id="myForm">
+			<p id="disclaimergold" style="color:red;">Il est estimé que vous récupérez les 200 lingots d'or quotidiens</p>
+			<ul>
+				<li>
+					<label id="costlabel">Coût total du/des objet(s) :</label>
+					<input required type="number" min="0" value="0" id="cost" name="cost_input" />
+				</li>
+				<li>
+					<label id="currentgoldlabel">Votre quantité d'or :</label>
+					<input required type="number" min="0" max="5000" value="0" id="currentgold" name="currentgold_input" />
+				</li>
+				
+				<li>
+					<label id="smileygoldlabel">Quantité d'or auprés de Smiley/semaine :</label>
+					<select name="smileygold_input" id="smileygold">
+						<option value="0">0</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+						<option value="150">150</option>
+						<option value="200">200</option>
+						<option value="250">250</option>
+						<option value="300">300</option>
+					</select>
+				</li>
+				<li class="button">
+					<button id="calculate" type="submit">Calculer</button>
+				</li>
+				<li>
+					<span id="resulttext">Jour(s) de grind : </span>
+					<span id="result"></span>
+                </li>
+            </ul>
+            <p id="thanks">Merci à <a href="https://www.reddit.com/r/fo76/comments/g33vkc/gold_bullion_grind_calculator/">u/goobarms</a> pour le calcul</p>
+        </form>
+		<script src="js/jquery-3.5.0.js"></script>
+		<script src="js/langstrings.js"></script>
+		<script src="js/lang.js"></script>
+        <script src="js/main.js"></script>
+	</body>
+</html>
