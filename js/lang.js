@@ -1,4 +1,5 @@
 function textchanger(){
+    $('title').text(language['H1Title']);
     $('h1').text(language['H1Title']);
     $('h2').text(language['H2Title']);
     $('#langchange').text(language['langchangebtn']);
