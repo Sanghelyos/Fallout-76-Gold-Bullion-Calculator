@@ -47,11 +47,6 @@ function autolang(){
 
 
 $(function(){
-
-  $.getJSON( "js/langstrings.json", function( json ) {
-    console.log( "JSON Data received, name is " + json.fr);
-});
-
     let language;
     autolang();
     $('#langchange').click(langchanger);
