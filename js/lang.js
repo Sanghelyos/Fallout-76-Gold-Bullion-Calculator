@@ -7,7 +7,7 @@ function textchanger(){
     $('#costlabel').text(language['totalcost']);
     $('#currentgoldlabel').text(language['currentgold']);
     $('#smileygoldlabel').text(language['smileygold']);
-    $('#calculate').text(language['calculate']);
+    $('#calculate').text(language['calcul']);
     $('#resulttext').text(language['result']);
     $('#thanks').html(language['thanks']);
 }
