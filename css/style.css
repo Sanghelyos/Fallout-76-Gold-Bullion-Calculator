@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'robotoregular';
-    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
-         url('fonts/roboto-regular-webfont.woff') format('woff');
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,6 +27,7 @@
 body{
     margin: 0;
     background-image: url('../img/background.jpg');
+    background-size: cover;
     
    
 }
@@ -49,6 +50,7 @@ nav{
     background-color: rgb(221,183,36);
     color: black;
     border: 1px solid black;
+    border-radius: 5px;
     font-size: 100%;
     padding: 5px;
     font-weight: bold;
@@ -113,6 +115,7 @@ select {
     width: 300px;
     box-sizing: border-box; /* To harmonize the look & feel of text field border */
     border: 1px solid rgb(221,183,36);
+    border-radius: 5px;
     background-color: black;
     color: white;
 }
@@ -173,4 +176,12 @@ footer{
 }
 #thanks{
     text-align: center;
+}
+input{
+    padding-left: 0.5%;
+}
+#resultli{
+    border: 1px solid rgb(221,183,36);
+    border-radius: 5px;
+    background-color: black;
 }
